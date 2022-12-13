@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tut.css">
+</head>
+
+<body>
+    <form name="all" class="all1">
+
+        <input class="box" type="text" name="my1"><br><br>
+        <input class="box" type="text" name="my2"><br><br>
+        <input class="btn" type="button" name="" value="ADDITION" onclick="add()">
+        <input class="btn" type="button" name="" value="SUBSTRACTION" onclick="sub()">
+        <input class="btn" type="button" name="" value="MULTIPLICATION" onclick="mult()">
+        <input class="btn" type="button" name="" value="DIVISION" onclick="div()"><br><br>
+        <input class="box" type="text" name="result">
+    </form>
+
+
+    <!-- //javascript -->
+
+    <script>
+
+        // for the addition 
+
+        function add() {
+
+            my1 = parseInt(all.my1.value);
+            my2 = parseInt(all.my2.value);
+            result = my1 + my2;
+            all.result.value = result;
+
+        }
+
+        // for the substraction 
+
+        function sub() {
+
+            my1 = parseInt(all.my1.value);
+            my2 = parseInt(all.my2.value);
+            result = my1 - my2;
+            all.result.value = result;
+
+        }
+
+        // for the multiplication 
+
+        function mult() {
+
+            my1 = parseInt(all.my1.value);
+            my2 = parseInt(all.my2.value);
+            result = my1 * my2;
+            all.result.value = result;
+
+        }
+
+        // for the dvision 
+
+        function div() {
+
+            my1 = parseInt(all.my1.value);
+            my2 = parseInt(all.my2.value);
+            result = my1 / my2;
+            all.result.value = result;
+
+        }
+    </script>
+
+</body>
+
+</html>
